@@ -134,7 +134,6 @@ function Reviews(props) {
 
   const checkRating = (stars) => {
     setStarsSelected(stars);
-    console.log(stars);
   };
 
   return (
