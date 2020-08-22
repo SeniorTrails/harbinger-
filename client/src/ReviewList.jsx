@@ -7,11 +7,11 @@ import DisplayComment from './DisplayComment.jsx';
 import KeywordSearch from './KeywordSearch';
 import {
   MyButton,
-} from "../styles";
+} from '../styles';
 
 /**
  * A component for holding a list of the reviews. It makes the database call and
- *  maps the indiviual review componenets to the page. These are displayed on the
+ *  maps the individual review components to the page. These are displayed on the
  * homepage.
  */
 const ReviewList = ({ userId, userId4Comments }) => {

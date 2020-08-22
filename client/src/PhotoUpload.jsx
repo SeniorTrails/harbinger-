@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 /**
  * Selects a photo to upload from the user's computer
  * @param {Function} changeHandler function that changes the file
- * @param {File} file the file that is being uploaded 
+ * @param {File} file the file that is being uploaded
  */
 const PhotoUpload = ({ changeHandler, file }) => (
   <div>

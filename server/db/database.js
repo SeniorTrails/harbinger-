@@ -332,6 +332,7 @@ const findUserAndUpdateImage = (serial, image) => Users.findOne({ where: { seria
 
 /**
  * Database helper to find the reviews joins with User, WebUrl, and Keywords
+ * @param {number} userId if no userId is passed finds all reviews
  */
 const findTopReviews = (userId) => new Promise((resolve, reject) => {
   const where = !userId ? {} : { userId };
