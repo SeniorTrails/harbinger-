@@ -182,7 +182,6 @@ const Keyword = db.define('Keyword', {
 }, { timestamps: false });
 Keyword.sync();
 
-// Merging
 // created new table in DB to persist users comments on other users website reviews
 const Comment = db.define('Comment', {
   id: { // sequelize id number auto generated
@@ -280,6 +279,9 @@ const saveUsers = (username, serial, bio, image) => Users.findOne({ where: { ser
 
 const getUser = (id) => Users.findOne({ where: { serial: id } });
 
+/**
+ * Database helper to find user by their user id number
+ */
 const getUserById = (id) => Users.findOne({ where: { id }, raw: true });
 
 //NOT USED
